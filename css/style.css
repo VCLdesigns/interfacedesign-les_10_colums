@@ -4,8 +4,7 @@
 @font-face {
   font-family: "domineregular";
   src: url("../fonts/domine-regular-webfont.eot");
-  src: url("../fonts/domine-regular-webfont.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/domine-regular-webfont.eot?#iefix") format("embedded-opentype"),
     url("../fonts/domine-regular-webfont.woff2") format("woff2"),
     url("../fonts/domine-regular-webfont.woff") format("woff"),
     url("../fonts/domine-regular-webfont.ttf") format("truetype"),
@@ -13,24 +12,23 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "montserratregular";
   src: url("../fonts/montserrat-regular-webfont.eot");
-  src: url("../fonts/montserrat-regular-webfont.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"),
     url("../fonts/montserrat-regular-webfont.woff2") format("woff2"),
     url("../fonts/montserrat-regular-webfont.woff") format("woff"),
     url("../fonts/montserrat-regular-webfont.ttf") format("truetype"),
-    url("../fonts/montserrat-regular-webfont.svg#montserratregular")
-      format("svg");
+    url("../fonts/montserrat-regular-webfont.svg#montserratregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "open_sansregular";
   src: url("../fonts/opensans-regular-webfont.eot");
-  src: url("../fonts/opensans-regular-webfont.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
     url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
     url("../fonts/opensans-regular-webfont.woff") format("woff"),
     url("../fonts/opensans-regular-webfont.ttf") format("truetype"),
@@ -38,6 +36,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /*
 /* Variabelen */
 :root {
@@ -47,6 +46,7 @@
   --kleur_wit: #f8f7f3;
   --kleur_zwart: #303030;
 }
+
 /* 
 /* Reset */
 * {
@@ -54,6 +54,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /*
 /* Standards */
 body {
@@ -68,17 +69,44 @@ body {
 #container {
   padding: 2vh;
 }
+
+
 h1 {
   text-align: center;
   font-family: var(--font_titel);
   padding: 25px 0;
+  font-weight: 900;
 }
-footer{
+.columns {
+  columns: 3;
+  column-rule: #303030 1px inset;
+
+}
+
+.item {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+
+h3 {
+  font-family: var(--font_subtitel);
+  padding: 3rem 0 1.5rem 1rem;
+  font-weight: 700;
+}
+
+p {
+  padding: 1rem 0 1rem 1rem;
+}
+
+footer {
   display: flex;
   justify-content: space-around;
   font-family: var(--font_subtitel);
   margin: 4rem 0 2rem 0;
 }
+
 @media (min-width: 750px) {
   #container {
     margin: 0 auto;
